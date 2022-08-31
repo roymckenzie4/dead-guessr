@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
 
     const fetchSong = async (props) => {
-      const result = await fetch("https://api.relisten.net/api/v2/artists/grateful-dead/shows/random");
+      const result = await fetch("https://relistenapi.alecgorge.com/api/v2/artists/grateful-dead/shows/random");
       const json = await result.json();
       const source = await json['sources'][0];
       const year = await json['year'].year;

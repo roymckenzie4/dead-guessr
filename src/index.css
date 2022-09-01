@@ -1,9 +1,8 @@
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	/*align-items: center;*/
 	background-color: black;
 	color: white;
+	margin: 0px;
 }
 
 * {
@@ -15,7 +14,14 @@ body {
 	font-weight: 400;
 	border: 2px;
 	display: flex;
+	flex-direction: column;
 	margin-top: 10px;
+}
+
+.score-text {
+	text-align: right;
+	padding-top: 10pt;
+	padding-right: 20pt;
 }
 
 .header {
@@ -38,14 +44,25 @@ body {
 
 .date-box-correct {
 	border: 2px solid black;
+}
+
+/* Define Colors */
+.color-correct {
 	color: #9CD88E;
 }
 
+.color-close {
+	color: #F7B32B;
+}
+
+.color-far {
+	color: #FF7F7F;
+}
 
 .date-box-old {
 	border: 2px solid black;
-	color: #FF7F7F;
 }
+
 
 
 .date-row {

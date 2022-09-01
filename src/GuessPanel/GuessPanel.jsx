@@ -4,7 +4,7 @@ import OldGuessDisplay from './OldGuessDisplay'
 import GuessSelector from './GuessSelector'
 
 
-function GuessPanel({ guess, hasStarted, hasGuessed, oldGuesses, trueYear, wonRound, songData}) {
+function GuessPanel({ guess, hasStarted, hasGuessed, oldGuesses, trueYear, result, songData}) {
 
 	return(
     <div>
@@ -12,7 +12,7 @@ function GuessPanel({ guess, hasStarted, hasGuessed, oldGuesses, trueYear, wonRo
     <OldGuessDisplay oldGuesses={oldGuesses} trueYear={trueYear}/>
     </div>
     <div>
-		<GuessSelector hasStarted={hasStarted} currentGuess={guess} wonRound={wonRound} songData={songData}/>
+		<GuessSelector hasStarted={hasStarted} currentGuess={guess} result={result} songData={songData}/>
 		</div>
     </div>
 	);
